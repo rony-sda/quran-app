@@ -24,7 +24,7 @@ router.get("/", async (_req: Request, res: Response) => {
  */
 router.get("/:id", async (req: Request, res: Response) => {
   try {
-    const id = parseInt(req.params.id, 10);
+    const id = parseInt(req.params.id as string, 10);
 
     if (isNaN(id) || id < 1 || id > 114) {
       res.status(400).json({
