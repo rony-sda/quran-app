@@ -17,6 +17,7 @@ app.use(cors({
     "http://localhost:3000",
     "http://localhost:3001",
     "http://127.0.0.1:3000",
+    "https://quran-app-ashen.vercel.app"
   ],
   methods: ["GET"],
 }));
@@ -39,7 +40,7 @@ app.listen(PORT, () => {
   console.log(`   GET /api/surahs/:id     — Get surah with ayahs`);
   console.log(`   GET /api/search?q=...   — Search ayahs`);
   console.log(`   GET /api/health         — Health check`);
-  
+
   // Start background preloading (non-blocking)
   preloadAllSurahs().catch((err) => {
     console.warn("Background preload failed:", err);
