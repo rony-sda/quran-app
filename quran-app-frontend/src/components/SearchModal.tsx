@@ -4,7 +4,7 @@ import React, { useState, useEffect, useCallback, useRef } from "react";
 import { useRouter } from "next/navigation";
 import type { SearchResult } from "@/src/lib/api";
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3001/api";
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || "https://quran-app-jsyy.onrender.com/api";
 
 interface SearchModalProps {
   isOpen: boolean;

@@ -1,6 +1,6 @@
 // API helper functions for the Quran App Frontend
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3001/api";
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || "https://quran-app-jsyy.onrender.com/api";
 
 // --- Types ---
 
